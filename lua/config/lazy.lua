@@ -23,13 +23,13 @@ vim.g.maplocalleader = "\\"
 
 -- Setup lazy.nvim
 require("lazy").setup({
-	spec = {
-		{
-			'sainnhe/gruvbox-material',
-			config = function() 
-				vim.cmd[[colorscheme gruvbox-material]]
-			end
-		},
-		{ import = "config.plugins" },
-	},
+  spec = {
+    {
+      'sainnhe/gruvbox-material',
+      config = function() 
+	vim.cmd[[colorscheme gruvbox-material]]
+      end
+    },
+    { import = "config.plugins" },
+  },
 })
